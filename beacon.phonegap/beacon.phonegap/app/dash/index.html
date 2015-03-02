@@ -1,0 +1,23 @@
+<ion-view view-title="Dashboard">
+    <ion-nav-buttons side="left">
+        <button class="button" ng-click="startListening()">
+            Start
+        </button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button" ng-click="stopListening()">
+            Stop
+        </button>
+    </ion-nav-buttons>
+    <ion-content class="padding" has-header="true">
+        <div class="list card">
+            <div class="item item-divider">Beacons</div>
+            <div class="item item-body" ng-repeat="item in beacons">
+                <div>
+                    <h2>{{item.name}}</h2>
+                    <p>{{item.distance}}</p>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
