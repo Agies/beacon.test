@@ -14,8 +14,9 @@
             <div class="item item-divider">Beacons</div>
             <div class="item item-body" ng-repeat="item in beacons">
                 <div>
-                    <h2>{{item.name}}</h2>
+                    <h2>{{item.name || item.color}}</h2>
                     <p>{{item.distance}}</p>
+                    <pre>{{item}}</pre>
                 </div>
             </div>
         </div>

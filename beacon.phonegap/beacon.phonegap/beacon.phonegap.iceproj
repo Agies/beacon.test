@@ -28,6 +28,7 @@
     <Content Include="app\dash\index.html" />
     <Content Include="app\dash\controller.js" />
     <Content Include="app\layout.html" />
+    <Content Include="App_Resources\Android\AndroidManifest.xml" />
     <Content Include="cordova.android.js" />
     <Content Include="cordova.ios.js" />
     <Content Include="cordova.wp8.js" />
