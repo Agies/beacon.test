@@ -11,6 +11,13 @@ angular.module('app', ['ionic'])
         if (window.estimote) {
             console.log("Estimotes enabled");
             function onBeaconsReceived(e) {
+                angular.forEach(e.beacons, function(current) {
+                    if (current.major == 36513) {
+                        current.room = "OPS Room";
+                    } else {
+                        current.room = "Dev Room";
+                    }
+                });
                 $broadcast('beaconsReceived', e);
             }
             document.addEventListener('beaconsReceived', onBeaconsReceived, false);
@@ -42,6 +49,14 @@ angular.module('app', ['ionic'])
                 'tab-dash': {
                     templateUrl: 'app/dash/index.html',
                     controller: 'dash'
+                }
+            }
+        }).state('tab.rooms', {
+            url: '/rooms',
+            views: {
+                'tab-rooms': {
+                    templateUrl: 'app/rooms/index.html',
+                    controller: 'rooms'
                 }
             }
         });

@@ -28,10 +28,18 @@
     <Content Include="app\dash\index.html" />
     <Content Include="app\dash\controller.js" />
     <Content Include="app\layout.html" />
+    <Content Include="app\rooms\controller.js" />
+    <Content Include="app\rooms\index.html" />
     <Content Include="App_Resources\Android\AndroidManifest.xml" />
     <Content Include="cordova.android.js" />
     <Content Include="cordova.ios.js" />
     <Content Include="cordova.wp8.js" />
+    <Content Include="img\Dev Room.jpg">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="img\OPS Room.jpg">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="index.html" />
     <Content Include="ionic\css\ionic.css">
       <SubType>Content</SubType>
@@ -141,6 +149,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\dash\" />
+    <Folder Include="app\rooms\" />
     <Folder Include="App_Resources\" />
     <Folder Include="App_Resources\Android\" />
     <Folder Include="App_Resources\Android\drawable-hdpi\" />
